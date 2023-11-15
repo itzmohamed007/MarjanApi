@@ -4,67 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e33ab17f-d32e-45d4-95f7-734926f0ea8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f88a4582-f46e-4cd1-8874-944efb61a4ad.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f88a4582-f46e-4cd1-8874-944efb61a4ad/storage_v2/_src_/database/my_promotion.0N1ZHg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f88a4582-f46e-4cd1-8874-944efb61a4ad/storage_v2/_src_/database/my_promotion.0N1ZHg/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f88a4582-f46e-4cd1-8874-944efb61a4ad/storage_v2/_src_/database/my_promotion.0N1ZHg/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f88a4582-f46e-4cd1-8874-944efb61a4ad/storage_v2/_src_/database/my_promotion.0N1ZHg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/CategoryPromotionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/CenterAdministratorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/DepartmentAdministratorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/GeneralAdministratorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/ProductPromotionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/Administrator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/CategoryPromotion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/CenterAdministrator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/DepartmentAdministrator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/GeneralAdministrator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/ProductPromotion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/Promotion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/repositories/CenterAdministratorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/repositories/DepartmentAdministratorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/repositories/GeneralAdministratorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/repositories/PromotionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/AdministratorLoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/AdministratorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/PromotionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/implementation/CenterAdministratorServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/implementation/DepartmentAdministratorServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/implementation/GeneralAdministratorServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/implementation/PromotionServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-example.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application-example.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/MarjanApiApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/models/Administrator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/models/Category.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/models/CategoryPromotion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/models/CenterAdministrator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/models/DepartmentAdministrator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/models/GeneralAdministrator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/models/Product.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/models/ProductPromotion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/models/Promotion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/MarjanApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/MarjanApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="e33ab17f-d32e-45d4-95f7-734926f0ea8a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,7 +85,7 @@
       <workItem from="1700039493296" duration="2208000" />
       <workItem from="1700046394824" duration="1939000" />
       <workItem from="1700053508991" duration="5255000" />
-      <workItem from="1700062175864" duration="1822000" />
+      <workItem from="1700062175864" duration="2141000" />
     </task>
     <servers />
   </component>
