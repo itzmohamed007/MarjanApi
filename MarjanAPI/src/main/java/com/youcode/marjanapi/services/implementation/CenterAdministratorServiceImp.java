@@ -3,6 +3,7 @@ package com.youcode.marjanapi.services.implementation;
 import com.youcode.marjanapi.models.CenterAdministrator;
 import com.youcode.marjanapi.repositories.CenterAdministratorRepository;
 import com.youcode.marjanapi.services.AdministratorService;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +15,7 @@ public class CenterAdministratorServiceImp implements AdministratorService<Cente
     private CenterAdministratorRepository repository;
 
     @Autowired
-    public CenterAdministratorServiceImp(CenterAdministratorRepository centerAdministratorRepository) {
+    public CenterAdministratorServiceImp(CenterAdministratorRepository centerAdministratorRepository, ModelMapper modelMapper) {
         this.repository = centerAdministratorRepository;
     }
 
