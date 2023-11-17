@@ -1,18 +1,30 @@
 package com.youcode.marjanapi.controllers;
 
-import com.youcode.marjanapi.services.PromotionService;
-import com.youcode.marjanapi.services.implementation.PromotionServiceImp;
+import com.youcode.marjanapi.dtos.CategoryPromotionDto;
+import com.youcode.marjanapi.models.CategoryPromotion;
+import com.youcode.marjanapi.services.CategoryPromotionService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/categoryPromotion")
 public class CategoryPromotionController {
-    private final PromotionService service;
+    private final CategoryPromotionService service;
 
     @Autowired
-    public CategoryPromotionController(PromotionServiceImp promotionServiceImp) {
-        this.service = promotionServiceImp;
+    public CategoryPromotionController(CategoryPromotionService categoryPromotionService) {
+        this.service = categoryPromotionService;
+    }
+
+    @GetMapping
+    public List<CategoryPromotion> readAll() {
+        return service.readAll();
+    }
+
+    @PostMapping
+    public String create(@RequestBody CategoryPromotionDto requestCategoryPromotion) {
+        
     }
 }
