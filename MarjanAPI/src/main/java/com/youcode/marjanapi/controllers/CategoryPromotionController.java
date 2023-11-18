@@ -25,6 +25,6 @@ public class CategoryPromotionController {
 
     @PostMapping
     public String create(@RequestBody CategoryPromotionDto requestCategoryPromotion) {
-        
+        return "not implemented yet";
     }
 }

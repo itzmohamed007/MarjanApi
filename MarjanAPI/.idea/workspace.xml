@@ -5,24 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e33ab17f-d32e-45d4-95f7-734926f0ea8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/dtos/AuthenticationDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/repositories/CategoryPromotionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/CategoryPromotionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/ProductPromotionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/implementation/CategoryPromotionServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/implementation/ProductPromotionServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/enums/PromotionStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/CategoryPromotionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/CategoryPromotionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/ProductPromotionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/ProductPromotionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/repositories/GeneralAdministratorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/repositories/GeneralAdministratorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/repositories/PromotionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/repositories/ProductPromotionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/AdministratorLoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/AdministratorLoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/PromotionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/PromotionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/implementation/CenterAdministratorServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/implementation/CenterAdministratorServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/implementation/DepartmentAdministratorServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/implementation/DepartmentAdministratorServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/implementation/GeneralAdministratorServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/implementation/GeneralAdministratorServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/implementation/PromotionServiceImp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-example.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-example.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/CenterAdministrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/CenterAdministrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/Promotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/Promotion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UML/MyPromotionApi Class Diagram.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/../UML/MyPromotionApi Class Diagram.PNG" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,30 +42,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;product__promotion&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "promotions",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\adm\Desktop\MarjanApi\MarjanAPI\src\main\resources" />
@@ -113,6 +101,7 @@
       <workItem from="1700219055254" duration="1677000" />
       <workItem from="1700228610151" duration="4906000" />
       <workItem from="1700243319842" duration="7605000" />
+      <workItem from="1700314069953" duration="589000" />
     </task>
     <servers />
   </component>
