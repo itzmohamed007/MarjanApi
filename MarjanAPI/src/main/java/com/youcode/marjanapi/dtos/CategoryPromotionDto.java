@@ -1,11 +1,16 @@
 package com.youcode.marjanapi.dtos;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.youcode.marjanapi.models.Category;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import lombok.*;
+import org.springframework.validation.annotation.Validated;
 
 @Data
-@NoArgsConstructor
+@Validated
 public class CategoryPromotionDto extends PromotionDto {
-    private Category category;
+    @NotNull(message = "category field cannot be empty")
+    @JsonManagedReference
+    private CategoryDto category;
 }

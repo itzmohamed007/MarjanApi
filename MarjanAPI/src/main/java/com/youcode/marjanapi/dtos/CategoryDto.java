@@ -1,7 +1,7 @@
 package com.youcode.marjanapi.dtos;
 
-import com.youcode.marjanapi.models.CategoryPromotion;
-import com.youcode.marjanapi.models.Product;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -12,7 +12,9 @@ import java.util.UUID;
 @NoArgsConstructor
 public class CategoryDto {
     private UUID uuid;
+    @NotNull(message = "category name field should not be blank")
     private String name;
-    private CategoryPromotion categoryPromotion;
-    private List<Product> products;
+    @JsonBackReference
+    private CategoryPromotionDto categoryPromotions;
+    private List<ProductDto> products;
 }

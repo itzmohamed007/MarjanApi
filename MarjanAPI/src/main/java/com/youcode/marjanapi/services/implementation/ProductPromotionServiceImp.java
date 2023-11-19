@@ -3,7 +3,6 @@ package com.youcode.marjanapi.services.implementation;
 import com.youcode.marjanapi.models.ProductPromotion;
 import com.youcode.marjanapi.repositories.ProductPromotionRepository;
 import com.youcode.marjanapi.services.ProductPromotionService;
-import com.youcode.marjanapi.services.PromotionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
