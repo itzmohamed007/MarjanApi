@@ -5,45 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e33ab17f-d32e-45d4-95f7-734926f0ea8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog-master.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/changelog-v1.0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/implementation/CenterAdministratorServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/implementation/CenterAdministratorServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/implementation/DepartmentAdministratorServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/implementation/DepartmentAdministratorServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-example.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-example.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-example.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/MarjanApiApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/controllers/CategoryPromotionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/controllers/CenterAdministratorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/controllers/DepartmentAdministratorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/controllers/GeneralAdministratorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/controllers/ProductPromotionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/models/Administrator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/models/Category.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/models/CategoryPromotion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/models/CenterAdministrator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/models/DepartmentAdministrator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/models/GeneralAdministrator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/models/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/models/ProductPromotion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/models/Promotion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/repositories/CenterAdministratorRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/repositories/DepartmentAdministratorRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/repositories/GeneralAdministratorRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/repositories/PromotionRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/services/AdministratorLoginService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/services/AdministratorService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/services/PromotionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/services/implementation/CenterAdministratorServiceImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/services/implementation/DepartmentAdministratorServiceImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/services/implementation/GeneralAdministratorServiceImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/youcode/marjanapi/services/implementation/PromotionServiceImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/youcode/marjanapi/MarjanApiApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/CategoryPromotionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/CategoryPromotionController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +16,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -83,7 +47,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;architecture&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;promotions&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -103,7 +67,10 @@
       <recent name="C:\Users\adm\Desktop\MarjanApi\MarjanAPI\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.MarjanApiApplication">
+    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="MarjanApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="MarjanAPI" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.youcode.marjanapi.MarjanApiApplication" />
@@ -111,6 +78,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #2" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -127,7 +99,16 @@
       <workItem from="1700053508991" duration="5255000" />
       <workItem from="1700062175864" duration="2141000" />
       <workItem from="1700066057639" duration="7157000" />
-      <workItem from="1700122726240" duration="4001000" />
+      <workItem from="1700122726240" duration="4640000" />
+      <workItem from="1700141321921" duration="4141000" />
+      <workItem from="1700208290651" duration="4303000" />
+      <workItem from="1700219055254" duration="1677000" />
+      <workItem from="1700228610151" duration="4906000" />
+      <workItem from="1700243319842" duration="7605000" />
+      <workItem from="1700314069953" duration="4299000" />
+      <workItem from="1700346969686" duration="5599000" />
+      <workItem from="1700396406032" duration="17547000" />
+      <workItem from="1700467380197" duration="1532000" />
     </task>
     <servers />
   </component>

@@ -7,10 +7,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-public interface PromotionService<O>{
-    Optional<O> create(O o);
+public interface PromotionService<O> extends CrudService<O>{
     Optional<O> read(UUID uuid);
-    List<O> readAll();
-    Optional<O> update(O o);
+    boolean update(O o);
     boolean delete(UUID uuid);
 }

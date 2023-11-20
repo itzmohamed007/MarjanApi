@@ -21,8 +21,8 @@ public class DepartmentAdministratorServiceImp implements AdministratorService<D
     }
 
     @Override
-    public Optional<DepartmentAdministrator> login(DepartmentAdministrator o) {
-        return Optional.empty();
+    public boolean login(DepartmentAdministrator o) {
+        return false;
     }
 
     @Override

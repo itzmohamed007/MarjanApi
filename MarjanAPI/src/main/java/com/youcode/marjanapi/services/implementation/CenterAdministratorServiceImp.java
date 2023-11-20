@@ -20,8 +20,8 @@ public class CenterAdministratorServiceImp implements AdministratorService<Cente
     }
 
     @Override
-    public Optional<CenterAdministrator> login(CenterAdministrator o) {
-        return Optional.empty();
+    public boolean login(CenterAdministrator o) {
+        return false;
     }
 
     @Override

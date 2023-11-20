@@ -7,5 +7,5 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class ProductPromotionDto extends ProductDto{
-    private Product product;
+    private ProductDto product;
 }
