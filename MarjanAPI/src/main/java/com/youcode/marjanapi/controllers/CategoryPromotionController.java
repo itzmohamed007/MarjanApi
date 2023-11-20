@@ -63,6 +63,17 @@ public class CategoryPromotionController {
         }
     }
 
+    @PutMapping("/{uuid}")
+    public ResponseEntity<?> update(@PathVariable UUID uuid, @Valid @RequestBody CategoryPromotionDto requestCategoryPromotionDto) {
+        if(requestCategoryPromotionDto.getUuid() == null) {
+            requestCategoryPromotionDto.setUuid(uuid);
+        }
+        if(service.update(modelMapper.map(requestCategoryPromotionDto, CategoryPromotion.class))) {
+            return new ResponseEntity<>("Category promotion updated successfully", HttpStatus.FOUND);
+        }
+        return new ResponseEntity<>("No category promotions found with uuid: " + uuid, HttpStatus.NOT_FOUND);
+    }
+
     @DeleteMapping("/{uuid}")
     public ResponseEntity<?> delete(@PathVariable UUID uuid) {
         if(service.delete(uuid)) {
