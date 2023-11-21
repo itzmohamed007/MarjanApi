@@ -18,6 +18,7 @@ public class CategoryPromotionServiceImp implements CategoryPromotionService {
     public CategoryPromotionServiceImp(CategoryPromotionRepository categoryPromotionRepository) {
         this.repository = categoryPromotionRepository;
     }
+
     @Override
     public boolean create(CategoryPromotion categoryPromotion) {
         try {

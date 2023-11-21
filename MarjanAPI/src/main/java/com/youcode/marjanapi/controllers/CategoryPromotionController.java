@@ -1,8 +1,6 @@
 package com.youcode.marjanapi.controllers;
 
-import com.youcode.marjanapi.dtos.CategoryDto;
 import com.youcode.marjanapi.dtos.CategoryPromotionDto;
-import com.youcode.marjanapi.models.Category;
 import com.youcode.marjanapi.models.CategoryPromotion;
 import com.youcode.marjanapi.services.CategoryPromotionService;
 import jakarta.validation.Valid;
@@ -13,11 +11,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.net.http.HttpResponse;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/categories/promotions")
