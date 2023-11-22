@@ -3,7 +3,6 @@ package com.youcode.marjanapi.controllers;
 import com.youcode.marjanapi.services.ProductPromotionService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

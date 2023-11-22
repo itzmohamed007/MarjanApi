@@ -1,6 +1,7 @@
 package com.youcode.marjanapi.controllers;
 
 import com.youcode.marjanapi.dtos.CategoryPromotionDto;
+import com.youcode.marjanapi.dtos.responses.CategoryPromotionDtoResp;
 import com.youcode.marjanapi.models.CategoryPromotion;
 import com.youcode.marjanapi.services.CategoryPromotionService;
 import jakarta.validation.Valid;
@@ -40,22 +41,20 @@ public class CategoryPromotionController {
     public ResponseEntity<?> read(@PathVariable UUID uuid) {
         Optional<CategoryPromotion> categoryPromotion = service.read(uuid);
         if (categoryPromotion.isPresent()) {
-//            CategoryPromotionDto categoryPromotionDto = modelMapper.map(categoryPromotion, CategoryPromotionDto.class);
-//            return new ResponseEntity<>(modelMapper.map(categoryPromotion, CategoryPromotionDto.class), HttpStatus.FOUND);
-            return new ResponseEntity<>(categoryPromotion, HttpStatus.FOUND);
+            return new ResponseEntity<>(modelMapper.map(categoryPromotion, CategoryPromotionDto.class), HttpStatus.OK);
         }
         return new ResponseEntity<>("No category promotion found", HttpStatus.NOT_FOUND);
     }
 
     @GetMapping
     public ResponseEntity<?> readAll() {
-        List<CategoryPromotionDto> categoryPromotions = service.readAll().stream()
-                .map(categoryPromotion -> modelMapper.map(categoryPromotion, CategoryPromotionDto.class))
+        List<CategoryPromotionDtoResp> categoryPromotions = service.readAll().stream()
+                .map(categoryPromotion -> modelMapper.map(categoryPromotion, CategoryPromotionDtoResp.class))
                 .toList();
         if (categoryPromotions.isEmpty()) {
             return new ResponseEntity<>("No category promotions found", HttpStatus.NOT_FOUND);
         } else {
-            return new ResponseEntity<>(categoryPromotions, HttpStatus.FOUND);
+            return new ResponseEntity<>(categoryPromotions, HttpStatus.OK);
         }
     }
 
@@ -65,7 +64,7 @@ public class CategoryPromotionController {
             requestCategoryPromotionDto.setUuid(uuid);
         }
         if(service.update(modelMapper.map(requestCategoryPromotionDto, CategoryPromotion.class))) {
-            return new ResponseEntity<>("Category promotion updated successfully", HttpStatus.FOUND);
+            return new ResponseEntity<>("Category promotion updated successfully", HttpStatus.OK);
         }
         return new ResponseEntity<>("No category promotions found with uuid: " + uuid, HttpStatus.NOT_FOUND);
     }
@@ -73,7 +72,7 @@ public class CategoryPromotionController {
     @DeleteMapping("/{uuid}")
     public ResponseEntity<?> delete(@PathVariable UUID uuid) {
         if(service.delete(uuid)) {
-            return new ResponseEntity<>("Category promotion deleted successfully", HttpStatus.FOUND);
+            return new ResponseEntity<>("Category promotion deleted successfully", HttpStatus.OK);
         }
         return new ResponseEntity<>("No category promotion found with uuid: " + uuid, HttpStatus.NOT_FOUND);
     }

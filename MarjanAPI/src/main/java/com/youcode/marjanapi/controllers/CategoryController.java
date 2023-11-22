@@ -2,6 +2,7 @@ package com.youcode.marjanapi.controllers;
 
 
 import com.youcode.marjanapi.dtos.CategoryDto;
+import com.youcode.marjanapi.dtos.responses.CategoryDtoResp;
 import com.youcode.marjanapi.models.Category;
 import com.youcode.marjanapi.services.CrudService;
 import com.youcode.marjanapi.services.implementation.CategoryServiceImp;
@@ -13,7 +14,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/categories")
@@ -28,10 +28,14 @@ public class CategoryController {
     }
 
     @GetMapping
-    public List<CategoryDto> readAll() {
-        return service.readAll().stream()
-                .map(category -> modelMapper.map(category, CategoryDto.class))
-                .collect(Collectors.toList());
+    public ResponseEntity<?> readAll() {
+        List<CategoryDtoResp> categories = service.readAll().stream()
+                .map(category -> modelMapper.map(category, CategoryDtoResp.class))
+                .toList();
+        if(categories.isEmpty()) {
+            return new ResponseEntity<>("No categories found", HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(categories, HttpStatus.FOUND);
     }
 
     @PostMapping

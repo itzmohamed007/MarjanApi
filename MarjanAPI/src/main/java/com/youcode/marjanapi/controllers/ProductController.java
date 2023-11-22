@@ -1,6 +1,7 @@
 package com.youcode.marjanapi.controllers;
 
 import com.youcode.marjanapi.dtos.ProductDto;
+import com.youcode.marjanapi.dtos.responses.ProductDtoResp;
 import com.youcode.marjanapi.models.Product;
 import com.youcode.marjanapi.services.implementation.ProductServiceImp;
 import jakarta.validation.Valid;
@@ -8,7 +9,6 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -27,11 +27,13 @@ public class ProductController {
 
     @GetMapping
     public ResponseEntity<?> readAll() {
-        List<Product> products = service.readAll();
+        List<ProductDtoResp> products = service.readAll().stream()
+                .map(product -> modelMapper.map(product, ProductDtoResp.class))
+                .toList();
         if(products.isEmpty()) {
             return new ResponseEntity<>("No products found", HttpStatus.NOT_FOUND);
         }
-        return new ResponseEntity<>(products, HttpStatus.FOUND);
+        return new ResponseEntity<>(products, HttpStatus.OK);
     }
 
     @PostMapping

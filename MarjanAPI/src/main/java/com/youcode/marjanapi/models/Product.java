@@ -1,7 +1,9 @@
 package com.youcode.marjanapi.models;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.UUID;
 @NoArgsConstructor
@@ -15,8 +17,7 @@ public class Product {
     private String name;
     private String brand;
     private float price;
-
-    @OneToOne(mappedBy = "product", cascade = CascadeType.ALL)
+    @OneToOne(mappedBy = "product", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private ProductPromotion productPromotion;
     @ManyToOne
     private Category category;
