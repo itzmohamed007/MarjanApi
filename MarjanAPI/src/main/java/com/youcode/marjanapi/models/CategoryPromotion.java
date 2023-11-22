@@ -13,6 +13,6 @@ import lombok.*;
 @Table(name = "category_promotion")
 public class CategoryPromotion extends Promotion{
     @JsonManagedReference
-    @OneToOne
+    @OneToOne()
     private Category category;
 }

@@ -19,7 +19,7 @@ public class Category {
     private String name;
     @JsonBackReference
     @ToString.Exclude
-    @OneToOne(mappedBy = "category", fetch = FetchType.LAZY)
+    @OneToOne(mappedBy = "category", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private CategoryPromotion categoryPromotion;
 
     @OneToMany(mappedBy = "category", fetch = FetchType.LAZY)

@@ -16,7 +16,7 @@ public class Product {
     private String brand;
     private float price;
 
-    @OneToOne(mappedBy = "product")
+    @OneToOne(mappedBy = "product", cascade = CascadeType.ALL)
     private ProductPromotion productPromotion;
     @ManyToOne
     private Category category;
