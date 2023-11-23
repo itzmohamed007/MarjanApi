@@ -3,7 +3,6 @@ package com.youcode.marjanapi.dtos;
 import com.youcode.marjanapi.enums.PromotionStatus;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-import org.springframework.validation.annotation.Validated;
 
 import java.util.UUID;
 

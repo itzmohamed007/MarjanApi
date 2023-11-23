@@ -1,7 +1,7 @@
 package com.youcode.marjanapi.controllers;
 
 import com.youcode.marjanapi.dtos.CategoryPromotionDto;
-import com.youcode.marjanapi.dtos.responses.CategoryPromotionDtoResp;
+import com.youcode.marjanapi.dtos.responses.CategoryPromotionRes;
 import com.youcode.marjanapi.models.CategoryPromotion;
 import com.youcode.marjanapi.services.CategoryPromotionService;
 import jakarta.validation.Valid;
@@ -30,7 +30,9 @@ public class CategoryPromotionController {
 
     @PostMapping
     public ResponseEntity<?> create(@Valid @RequestBody CategoryPromotionDto requestCategoryPromotion) {
-        if(service.create(modelMapper.map(requestCategoryPromotion, CategoryPromotion.class))) {
+        CategoryPromotion categoryPromotion = modelMapper.map(requestCategoryPromotion, CategoryPromotion.class);
+        System.out.println(categoryPromotion.getCategory().getUuid());
+        if(service.create(categoryPromotion)) {
             return new ResponseEntity<>("category promotion created successfully", HttpStatus.CREATED);
         } else {
             return new ResponseEntity<>("category promotion creation failed", HttpStatus.INTERNAL_SERVER_ERROR);
@@ -41,15 +43,16 @@ public class CategoryPromotionController {
     public ResponseEntity<?> read(@PathVariable UUID uuid) {
         Optional<CategoryPromotion> categoryPromotion = service.read(uuid);
         if (categoryPromotion.isPresent()) {
-            return new ResponseEntity<>(modelMapper.map(categoryPromotion, CategoryPromotionDto.class), HttpStatus.OK);
+//            return new ResponseEntity<>(modelMapper.map(categoryPromotion, CategoryPromotionRes.class), HttpStatus.OK);
+            return new ResponseEntity<>(categoryPromotion, HttpStatus.OK);
         }
         return new ResponseEntity<>("No category promotion found", HttpStatus.NOT_FOUND);
     }
 
     @GetMapping
     public ResponseEntity<?> readAll() {
-        List<CategoryPromotionDtoResp> categoryPromotions = service.readAll().stream()
-                .map(categoryPromotion -> modelMapper.map(categoryPromotion, CategoryPromotionDtoResp.class))
+        List<CategoryPromotionRes> categoryPromotions = service.readAll().stream()
+                .map(categoryPromotion -> modelMapper.map(categoryPromotion, CategoryPromotionRes.class))
                 .toList();
         if (categoryPromotions.isEmpty()) {
             return new ResponseEntity<>("No category promotions found", HttpStatus.NOT_FOUND);

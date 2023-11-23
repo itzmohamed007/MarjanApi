@@ -1,5 +1,6 @@
 package com.youcode.marjanapi.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,8 +18,10 @@ public class Product {
     private String name;
     private String brand;
     private float price;
-    @OneToOne(mappedBy = "product", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToOne(mappedBy = "product", fetch = FetchType.LAZY)
+    @JsonIgnore
     private ProductPromotion productPromotion;
     @ManyToOne
+    @JsonIgnore
     private Category category;
 }

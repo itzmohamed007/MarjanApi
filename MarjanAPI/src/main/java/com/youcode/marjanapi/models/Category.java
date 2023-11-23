@@ -1,5 +1,6 @@
 package com.youcode.marjanapi.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,8 +16,10 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID uuid;
     private String name;
-    @OneToOne(mappedBy = "category", cascade = CascadeType.ALL)
+    @OneToOne(mappedBy = "category")
+    @JsonIgnore
     private CategoryPromotion categoryPromotion;
-    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "category")
+    @JsonIgnore
     private List<Product> products;
 }

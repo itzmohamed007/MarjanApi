@@ -10,6 +10,7 @@ import java.util.List;
 
 @Service
 public class CategoryServiceImp implements CrudService<Category> {
+
     private final CategoryRepository repository;
 
     @Autowired

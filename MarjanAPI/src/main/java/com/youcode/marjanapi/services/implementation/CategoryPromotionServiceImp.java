@@ -25,6 +25,8 @@ public class CategoryPromotionServiceImp implements CategoryPromotionService {
             repository.save(categoryPromotion);
             return true;
         } catch (Exception e) {
+            System.out.println("an error occurred while inserting new category promotion");
+            System.out.println(e.getMessage());
             return false;
         }
     }

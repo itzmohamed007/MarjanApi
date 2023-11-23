@@ -11,11 +11,9 @@ import java.util.UUID;
 @Data
 @NoArgsConstructor
 public class CategoryDto {
-    @NotNull(message = "uuid field cannot be empty")
     private UUID uuid;
     @NotNull(message = "category name field should not be blank")
     private String name;
-    @JsonIgnore
-    private CategoryPromotionDto categoryPromotions;
+    private CategoryPromotionDto categoryPromotion;
     private List<ProductDto> products;
 }

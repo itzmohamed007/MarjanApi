@@ -1,7 +1,7 @@
 package com.youcode.marjanapi.controllers;
 
 import com.youcode.marjanapi.dtos.ProductDto;
-import com.youcode.marjanapi.dtos.responses.ProductDtoResp;
+import com.youcode.marjanapi.dtos.responses.ProductRes;
 import com.youcode.marjanapi.models.Product;
 import com.youcode.marjanapi.services.implementation.ProductServiceImp;
 import jakarta.validation.Valid;
@@ -27,8 +27,8 @@ public class ProductController {
 
     @GetMapping
     public ResponseEntity<?> readAll() {
-        List<ProductDtoResp> products = service.readAll().stream()
-                .map(product -> modelMapper.map(product, ProductDtoResp.class))
+        List<ProductRes> products = service.readAll().stream()
+                .map(product -> modelMapper.map(product, ProductRes.class))
                 .toList();
         if(products.isEmpty()) {
             return new ResponseEntity<>("No products found", HttpStatus.NOT_FOUND);
@@ -38,8 +38,8 @@ public class ProductController {
 
     @PostMapping
     public ResponseEntity<?> create(@Valid @RequestBody ProductDto productDto) {
-        System.out.println("entered product dto: " + productDto.toString());
-        if(service.create(modelMapper.map(productDto, Product.class))) {
+        Product product = modelMapper.map(productDto, Product.class);
+        if(service.create(product)) {
             return new ResponseEntity<>("Product created successfully", HttpStatus.OK);
         }
         return new ResponseEntity<>("Product created failed", HttpStatus.INTERNAL_SERVER_ERROR);

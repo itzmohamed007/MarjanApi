@@ -1,6 +1,6 @@
 package com.youcode.marjanapi.models;
 
-import jakarta.persistence.CascadeType;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
@@ -9,10 +9,10 @@ import lombok.ToString;
 
 
 @Data
-@ToString
 @Entity
 @Table(name = "category_promotion")
-public class CategoryPromotion extends Promotion{
-    @OneToOne(cascade = CascadeType.ALL)
+public class CategoryPromotion extends Promotion {
+    @OneToOne
+    @JsonIgnore
     private Category category;
 }
