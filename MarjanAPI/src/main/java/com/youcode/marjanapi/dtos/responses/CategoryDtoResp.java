@@ -11,6 +11,6 @@ import java.util.UUID;
 public class CategoryDtoResp {
     private UUID uuid;
     private String name;
-    private CategoryPromotionDto categoryPromotions;
+    private CategoryPromotionDto categoryPromotion;
     private List<ProductDto> products;
 }

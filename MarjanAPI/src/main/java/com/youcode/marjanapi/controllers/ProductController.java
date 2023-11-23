@@ -38,9 +38,10 @@ public class ProductController {
 
     @PostMapping
     public ResponseEntity<?> create(@Valid @RequestBody ProductDto productDto) {
+        System.out.println("entered product dto: " + productDto.toString());
         if(service.create(modelMapper.map(productDto, Product.class))) {
-            return new ResponseEntity<>("Product creation failed", HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>("Product created successfully", HttpStatus.OK);
         }
-        return new ResponseEntity<>("Product created successfully", HttpStatus.CREATED);
+        return new ResponseEntity<>("Product created failed", HttpStatus.INTERNAL_SERVER_ERROR);
     }
 }

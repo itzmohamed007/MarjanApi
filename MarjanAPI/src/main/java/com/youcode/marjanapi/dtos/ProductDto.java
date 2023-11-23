@@ -6,12 +6,14 @@ import jakarta.validation.constraints.Digits;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 import org.springframework.validation.annotation.Validated;
 
 import java.util.UUID;
 
 @Data
 @NoArgsConstructor
+@ToString
 @Validated
 public class ProductDto {
     private UUID uuid;

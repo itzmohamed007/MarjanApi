@@ -35,7 +35,7 @@ public class CategoryController {
         if(categories.isEmpty()) {
             return new ResponseEntity<>("No categories found", HttpStatus.NOT_FOUND);
         }
-        return new ResponseEntity<>(categories, HttpStatus.FOUND);
+        return new ResponseEntity<>(categories, HttpStatus.OK);
     }
 
     @PostMapping

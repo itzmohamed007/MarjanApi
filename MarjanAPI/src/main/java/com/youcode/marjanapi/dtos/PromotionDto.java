@@ -7,12 +7,11 @@ import org.springframework.validation.annotation.Validated;
 
 import java.util.UUID;
 
-@Validated
 @Data
 public abstract class PromotionDto {
     private UUID uuid;
     @NotNull(message = "percentage field cannot be empty")
     private Float percentage;
-    @NotNull(message = "status field cannot be null")
+    @NotNull(message = "status field cannot be empty")
     private PromotionStatus status;
 }
