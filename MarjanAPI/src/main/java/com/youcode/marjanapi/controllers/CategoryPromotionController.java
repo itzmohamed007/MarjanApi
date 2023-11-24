@@ -43,8 +43,8 @@ public class CategoryPromotionController {
     public ResponseEntity<?> read(@PathVariable UUID uuid) {
         Optional<CategoryPromotion> categoryPromotion = service.read(uuid);
         if (categoryPromotion.isPresent()) {
-//            return new ResponseEntity<>(modelMapper.map(categoryPromotion, CategoryPromotionRes.class), HttpStatus.OK);
-            return new ResponseEntity<>(categoryPromotion, HttpStatus.OK);
+            CategoryPromotionRes categoryPromotionRes = modelMapper.map(categoryPromotion.get(), CategoryPromotionRes.class);
+            return new ResponseEntity<>(categoryPromotionRes, HttpStatus.OK);
         }
         return new ResponseEntity<>("No category promotion found", HttpStatus.NOT_FOUND);
     }

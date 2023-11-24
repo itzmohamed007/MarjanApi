@@ -10,6 +10,4 @@ public class ProductRes {
     private String name;
     private String brand;
     private float price;
-    private CategoryRes category;
-    private ProductPromotionRes productPromotion;
 }

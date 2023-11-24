@@ -13,6 +13,6 @@ import lombok.ToString;
 @Table(name = "category_promotion")
 public class CategoryPromotion extends Promotion {
     @OneToOne
-    @JsonIgnore
+//    @JsonIgnore
     private Category category;
 }

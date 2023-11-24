@@ -1,6 +1,7 @@
 package com.youcode.marjanapi.controllers;
 
 import com.youcode.marjanapi.dtos.ProductDto;
+import com.youcode.marjanapi.dtos.responses.ProductCategoryRes;
 import com.youcode.marjanapi.dtos.responses.ProductRes;
 import com.youcode.marjanapi.models.Product;
 import com.youcode.marjanapi.services.implementation.ProductServiceImp;
@@ -27,8 +28,8 @@ public class ProductController {
 
     @GetMapping
     public ResponseEntity<?> readAll() {
-        List<ProductRes> products = service.readAll().stream()
-                .map(product -> modelMapper.map(product, ProductRes.class))
+        List<ProductCategoryRes> products = service.readAll().stream()
+                .map(product -> modelMapper.map(product, ProductCategoryRes.class))
                 .toList();
         if(products.isEmpty()) {
             return new ResponseEntity<>("No products found", HttpStatus.NOT_FOUND);
