@@ -3,11 +3,9 @@ package com.youcode.marjanapi.services.implementation;
 import com.youcode.marjanapi.models.DepartmentAdministrator;
 import com.youcode.marjanapi.repositories.DepartmentAdministratorRepository;
 import com.youcode.marjanapi.services.AdministratorService;
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.management.modelmbean.ModelMBean;
 import java.util.Optional;
 import java.util.UUID;
 

@@ -11,9 +11,9 @@
 4||10|c|G
 4||10|C|G
 4||10|T|G</Grants>
-      <IntrospectionStateNumber>3326</IntrospectionStateNumber>
+      <IntrospectionStateNumber>3464</IntrospectionStateNumber>
       <ServerVersion>16.0</ServerVersion>
-      <StartupTime>1698916738</StartupTime>
+      <StartupTime>1700334526</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -809,7 +809,7 @@ false Zulu
 14643||10|C|G
 14643||-9223372036854775808|U|G
 14643||10|U|G</Grants>
-      <IntrospectionStateNumber>3326</IntrospectionStateNumber>
+      <IntrospectionStateNumber>3464</IntrospectionStateNumber>
       <ObjectId>16658</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4237,12 +4237,503 @@ false Zulu
     <schema id="265" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>3326</IntrospectionStateNumber>
-      <IntrospectionTimestamp>2023-11-15.10:03:53.468</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-11-15.09:03:54</LocalIntrospectionTimestamp>
+      <IntrospectionStateNumber>3464</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2023-11-23.12:25:32.604</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-11-23.11:25:33</LocalIntrospectionTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>524</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
+    <table id="266" parent="265" name="category">
+      <ObjectId>17633</ObjectId>
+      <StateNumber>3403</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="267" parent="265" name="category_promotion">
+      <ObjectId>17638</ObjectId>
+      <StateNumber>3407</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="268" parent="265" name="center_administrator">
+      <ObjectId>17643</ObjectId>
+      <StateNumber>3408</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="269" parent="265" name="databasechangelog">
+      <ObjectId>17696</ObjectId>
+      <StateNumber>3435</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="270" parent="265" name="databasechangeloglock">
+      <ObjectId>17691</ObjectId>
+      <StateNumber>3432</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="271" parent="265" name="department_administrator">
+      <ObjectId>17650</ObjectId>
+      <StateNumber>3399</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="272" parent="265" name="general_administrator">
+      <ObjectId>17657</ObjectId>
+      <StateNumber>3400</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="273" parent="265" name="product">
+      <ObjectId>17664</ObjectId>
+      <StateNumber>3404</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="274" parent="265" name="product_promotion">
+      <ObjectId>17671</ObjectId>
+      <StateNumber>3409</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="275" parent="265" name="test">
+      <ObjectId>17701</ObjectId>
+      <StateNumber>3436</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <column id="276" parent="266" name="uuid">
+      <DasType>uuid|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>3396</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="277" parent="266" name="name">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>3396</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="278" parent="266" name="category_pkey">
+      <ColNames>uuid</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17636</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>3396</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="279" parent="266" name="category_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17637</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>3396</StateNumber>
+      <UnderlyingIndexId>17636</UnderlyingIndexId>
+    </key>
+    <column id="280" parent="267" name="uuid">
+      <DasType>uuid|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>3397</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="281" parent="267" name="percentage">
+      <DasType>real|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>3397</StateNumber>
+      <TypeId>700</TypeId>
+    </column>
+    <column id="282" parent="267" name="category_uuid">
+      <DasType>uuid|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>3397</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="283" parent="267" name="status">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>3407</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <foreign-key id="284" parent="267" name="fkexe874lhx1n7muunhmpdu7qxf">
+      <ColNames>category_uuid</ColNames>
+      <ObjectId>17676</ObjectId>
+      <StateNumber>3403</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>17633</RefTableId>
+    </foreign-key>
+    <index id="285" parent="267" name="category_promotion_pkey">
+      <ColNames>uuid</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17641</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>3397</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="286" parent="267" name="category_promotion_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17642</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>3397</StateNumber>
+      <UnderlyingIndexId>17641</UnderlyingIndexId>
+    </key>
+    <column id="287" parent="268" name="uuid">
+      <DasType>uuid|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>3398</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="288" parent="268" name="email">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>3398</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="289" parent="268" name="password">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>3398</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="290" parent="268" name="city">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>3408</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="291" parent="268" name="center_administrator_pkey">
+      <ColNames>uuid</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17648</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>3398</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="292" parent="268" name="center_administrator_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17649</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>3398</StateNumber>
+      <UnderlyingIndexId>17648</UnderlyingIndexId>
+    </key>
+    <column id="293" parent="269" name="id">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>3435</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="294" parent="269" name="author">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>3435</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="295" parent="269" name="filename">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>3435</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="296" parent="269" name="dateexecuted">
+      <DasType>timestamp|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>3435</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="297" parent="269" name="orderexecuted">
+      <DasType>integer|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>3435</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="298" parent="269" name="exectype">
+      <DasType>varchar(10)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StateNumber>3435</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="299" parent="269" name="md5sum">
+      <DasType>varchar(35)|0s</DasType>
+      <Position>7</Position>
+      <StateNumber>3435</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="300" parent="269" name="description">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>8</Position>
+      <StateNumber>3435</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="301" parent="269" name="comments">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>9</Position>
+      <StateNumber>3435</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="302" parent="269" name="tag">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>10</Position>
+      <StateNumber>3435</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="303" parent="269" name="liquibase">
+      <DasType>varchar(20)|0s</DasType>
+      <Position>11</Position>
+      <StateNumber>3435</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="304" parent="269" name="contexts">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>12</Position>
+      <StateNumber>3435</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="305" parent="269" name="labels">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>13</Position>
+      <StateNumber>3435</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="306" parent="269" name="deployment_id">
+      <DasType>varchar(10)|0s</DasType>
+      <Position>14</Position>
+      <StateNumber>3435</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="307" parent="270" name="id">
+      <DasType>integer|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>3432</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="308" parent="270" name="locked">
+      <DasType>boolean|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>3432</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="309" parent="270" name="lockgranted">
+      <DasType>timestamp|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>3432</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="310" parent="270" name="lockedby">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>3432</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="311" parent="270" name="databasechangeloglock_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17694</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>3432</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="312" parent="270" name="databasechangeloglock_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17695</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>3432</StateNumber>
+      <UnderlyingIndexId>17694</UnderlyingIndexId>
+    </key>
+    <column id="313" parent="271" name="uuid">
+      <DasType>uuid|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>3399</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="314" parent="271" name="email">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>3399</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="315" parent="271" name="password">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>3399</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="316" parent="271" name="department_administrator_pkey">
+      <ColNames>uuid</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17655</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>3399</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="317" parent="271" name="department_administrator_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17656</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>3399</StateNumber>
+      <UnderlyingIndexId>17655</UnderlyingIndexId>
+    </key>
+    <column id="318" parent="272" name="uuid">
+      <DasType>uuid|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>3400</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="319" parent="272" name="email">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>3400</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="320" parent="272" name="password">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>3400</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="321" parent="272" name="general_administrator_pkey">
+      <ColNames>uuid</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17662</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>3400</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="322" parent="272" name="general_administrator_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17663</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>3400</StateNumber>
+      <UnderlyingIndexId>17662</UnderlyingIndexId>
+    </key>
+    <column id="323" parent="273" name="uuid">
+      <DasType>uuid|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>3401</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="324" parent="273" name="brand">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>3401</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="325" parent="273" name="name">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>3401</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="326" parent="273" name="price">
+      <DasType>real|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>3401</StateNumber>
+      <TypeId>700</TypeId>
+    </column>
+    <column id="327" parent="273" name="category_uuid">
+      <DasType>uuid|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>3401</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <foreign-key id="328" parent="273" name="fk2r39q6kj523vmwdmvo41i8h70">
+      <ColNames>category_uuid</ColNames>
+      <ObjectId>17681</ObjectId>
+      <StateNumber>3404</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>17633</RefTableId>
+    </foreign-key>
+    <index id="329" parent="273" name="product_pkey">
+      <ColNames>uuid</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17669</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>3401</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="330" parent="273" name="product_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17670</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>3401</StateNumber>
+      <UnderlyingIndexId>17669</UnderlyingIndexId>
+    </key>
+    <column id="331" parent="274" name="uuid">
+      <DasType>uuid|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>3402</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="332" parent="274" name="percentage">
+      <DasType>real|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>3402</StateNumber>
+      <TypeId>700</TypeId>
+    </column>
+    <column id="333" parent="274" name="product_uuid">
+      <DasType>uuid|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>3402</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="334" parent="274" name="status">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>3409</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <foreign-key id="335" parent="274" name="fkb70btckw3ej7g0j4y08cwj7yj">
+      <ColNames>product_uuid</ColNames>
+      <ObjectId>17686</ObjectId>
+      <StateNumber>3405</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>17664</RefTableId>
+    </foreign-key>
+    <index id="336" parent="274" name="product_promotion_pkey">
+      <ColNames>uuid</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17674</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>3402</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="337" parent="274" name="product_promotion_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17675</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>3402</StateNumber>
+      <UnderlyingIndexId>17674</UnderlyingIndexId>
+    </key>
+    <column id="338" parent="275" name="test">
+      <DasType>text|0s</DasType>
+      <Position>1</Position>
+      <StateNumber>3436</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
   </database-model>
 </dataSource>

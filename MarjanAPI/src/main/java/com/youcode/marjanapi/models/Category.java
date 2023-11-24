@@ -1,14 +1,13 @@
 package com.youcode.marjanapi.models;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 
 import java.util.List;
 import java.util.UUID;
+
 @NoArgsConstructor
 @Data
 @Entity
@@ -17,11 +16,10 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID uuid;
     private String name;
-    @JsonBackReference
-    @ToString.Exclude
-    @OneToOne(mappedBy = "category", fetch = FetchType.LAZY)
+    @OneToOne(mappedBy = "category")
+    @JsonIgnore
     private CategoryPromotion categoryPromotion;
-
-    @OneToMany(mappedBy = "category", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "category")
+    @JsonIgnore
     private List<Product> products;
 }

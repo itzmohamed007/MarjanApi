@@ -1,9 +1,8 @@
 package com.youcode.marjanapi.dtos;
 
-import com.youcode.marjanapi.models.Category;
-import com.youcode.marjanapi.models.ProductPromotion;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.validation.constraints.Digits;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -13,13 +12,13 @@ import java.util.UUID;
 @NoArgsConstructor
 public class ProductDto {
     private UUID uuid;
-    @NotBlank(message = "product name should not be blank")
+    @NotNull(message = "product name cannot be empty")
     private String name;
-    @NotBlank(message = "brand name should not be blank")
+    @NotNull(message = "brand name cannot be empty")
     private String brand;
-    @NotBlank(message = "price should not be blank")
-    @Min(0)
-    private float price;
-    private ProductPromotionDto productPromotion;
+    @NotNull(message = "price cannot be empty")
+    @Digits(integer = 4, fraction = 2, message = "Invalid price format")
+    private Float price;
     private CategoryDto category;
+    private ProductPromotionDto productPromotion;
 }

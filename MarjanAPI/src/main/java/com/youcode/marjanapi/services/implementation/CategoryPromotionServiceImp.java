@@ -18,12 +18,15 @@ public class CategoryPromotionServiceImp implements CategoryPromotionService {
     public CategoryPromotionServiceImp(CategoryPromotionRepository categoryPromotionRepository) {
         this.repository = categoryPromotionRepository;
     }
+
     @Override
     public boolean create(CategoryPromotion categoryPromotion) {
         try {
             repository.save(categoryPromotion);
             return true;
         } catch (Exception e) {
+            System.out.println("an error occurred while inserting new category promotion");
+            System.out.println(e.getMessage());
             return false;
         }
     }

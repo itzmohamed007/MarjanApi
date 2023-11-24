@@ -1,18 +1,18 @@
 package com.youcode.marjanapi.models;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-import jakarta.persistence.*;
-import lombok.*;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.Table;
+import lombok.Data;
+import lombok.ToString;
 
-@NoArgsConstructor
-@Getter
-@Setter
-@ToString
+
+@Data
 @Entity
 @Table(name = "category_promotion")
-public class CategoryPromotion extends Promotion{
-    @JsonManagedReference
+public class CategoryPromotion extends Promotion {
     @OneToOne
+//    @JsonIgnore
     private Category category;
 }

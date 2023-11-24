@@ -1,7 +1,6 @@
 package com.youcode.marjanapi.services.implementation;
 
 import com.youcode.marjanapi.models.Product;
-import com.youcode.marjanapi.repositories.CategoryRepository;
 import com.youcode.marjanapi.repositories.ProductRepository;
 import com.youcode.marjanapi.services.CrudService;
 import org.springframework.beans.factory.annotation.Autowired;
