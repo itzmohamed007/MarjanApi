@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e33ab17f-d32e-45d4-95f7-734926f0ea8a" name="Changes" comment="rfibrfhi">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/dtos/responses/CategoryProductRes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/dtos/responses/ProductCategoryRes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f88a4582-f46e-4cd1-8874-944efb61a4ad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f88a4582-f46e-4cd1-8874-944efb61a4ad.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/CategoryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/CategoryPromotionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/CategoryPromotionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/dtos/responses/CategoryRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/dtos/responses/CategoryRes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/dtos/responses/ProductRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/dtos/responses/ProductRes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/CategoryPromotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/CategoryPromotion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/ProductPromotionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/ProductPromotionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/dtos/CategoryPromotionDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/dtos/CategoryPromotionDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/dtos/ProductPromotionDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/dtos/ProductPromotionDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/implementation/ProductPromotionServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/services/implementation/ProductPromotionServiceImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +143,7 @@
       <workItem from="1700674124868" duration="9444000" />
       <workItem from="1700735716037" duration="17817000" />
       <workItem from="1700813400318" duration="7333000" />
-      <workItem from="1700847829793" duration="3520000" />
+      <workItem from="1700847829793" duration="7610000" />
     </task>
     <servers />
   </component>

@@ -6,5 +6,6 @@ import lombok.Data;
 
 @Data
 public class CategoryPromotionDto extends PromotionDto {
+    @NotNull(message = "category cannot be null")
     private CategoryDto category;
 }

@@ -31,7 +31,6 @@ public class CategoryPromotionController {
     @PostMapping
     public ResponseEntity<?> create(@Valid @RequestBody CategoryPromotionDto requestCategoryPromotion) {
         CategoryPromotion categoryPromotion = modelMapper.map(requestCategoryPromotion, CategoryPromotion.class);
-        System.out.println(categoryPromotion.getCategory().getUuid());
         if(service.create(categoryPromotion)) {
             return new ResponseEntity<>("category promotion created successfully", HttpStatus.CREATED);
         } else {
@@ -63,13 +62,12 @@ public class CategoryPromotionController {
 
     @PutMapping("/{uuid}")
     public ResponseEntity<?> update(@PathVariable UUID uuid, @Valid @RequestBody CategoryPromotionDto requestCategoryPromotionDto) {
-        if(requestCategoryPromotionDto.getUuid() == null) {
+        if(requestCategoryPromotionDto.getUuid() == null)
             requestCategoryPromotionDto.setUuid(uuid);
-        }
         if(service.update(modelMapper.map(requestCategoryPromotionDto, CategoryPromotion.class))) {
             return new ResponseEntity<>("Category promotion updated successfully", HttpStatus.OK);
         }
-        return new ResponseEntity<>("No category promotions found with uuid: " + uuid, HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>("No category promotion found with uuid: " + uuid, HttpStatus.NOT_FOUND);
     }
 
     @DeleteMapping("/{uuid}")
