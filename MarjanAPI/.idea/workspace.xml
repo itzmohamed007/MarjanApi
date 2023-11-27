@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e33ab17f-d32e-45d4-95f7-734926f0ea8a" name="Changes" comment="rfibrfhi">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/enums/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/repositories/AdministratorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/jwt/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/jwt/JwtService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/Administrator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/GeneralAdministrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/GeneralAdministrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/repositories/AdministratorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/repositories/AdministratorRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +20,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -148,7 +146,10 @@
       <workItem from="1700847829793" duration="8443000" />
       <workItem from="1700918679492" duration="1375000" />
       <workItem from="1700994552407" duration="1506000" />
-      <workItem from="1700996801300" duration="5718000" />
+      <workItem from="1700996801300" duration="5770000" />
+      <workItem from="1701071695859" duration="7196000" />
+      <workItem from="1701095903435" duration="881000" />
+      <workItem from="1701107263685" duration="6160000" />
     </task>
     <servers />
   </component>
