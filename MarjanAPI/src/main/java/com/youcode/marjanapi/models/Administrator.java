@@ -7,7 +7,6 @@
 
     import java.util.UUID;
 
-    @NoArgsConstructor
     @Data
     @MappedSuperclass
     public abstract class Administrator {
