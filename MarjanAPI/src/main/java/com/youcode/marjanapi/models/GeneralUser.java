@@ -14,8 +14,8 @@ import java.util.List;
 @Entity
 @AllArgsConstructor
 @Table(name = "general_administrator")
-public class GeneralAdministrator extends Administrator implements UserDetails {
-    public GeneralAdministrator(String email, String password, Role role) {
+public class GeneralUser extends User implements UserDetails {
+    public GeneralUser(String email, String password, Role role) {
         setEmail(email);
         setPassword(password);
         setRole(role);

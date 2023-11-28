@@ -1,6 +1,6 @@
 package com.youcode.marjanapi.services.implementation;
 
-import com.youcode.marjanapi.models.DepartmentAdministrator;
+import com.youcode.marjanapi.models.DepartmentUser;
 import com.youcode.marjanapi.repositories.DepartmentAdministratorRepository;
 import com.youcode.marjanapi.services.AdministratorService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +10,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Service
-public class DepartmentAdministratorServiceImp implements AdministratorService<DepartmentAdministrator> {
+public class DepartmentAdministratorServiceImp implements AdministratorService<DepartmentUser> {
     private DepartmentAdministratorRepository repository;
 
     @Autowired
@@ -19,12 +19,12 @@ public class DepartmentAdministratorServiceImp implements AdministratorService<D
     }
 
     @Override
-    public boolean login(DepartmentAdministrator o) {
+    public boolean login(DepartmentUser o) {
         return false;
     }
 
     @Override
-    public Optional<DepartmentAdministrator> create(DepartmentAdministrator o) {
+    public Optional<DepartmentUser> create(DepartmentUser o) {
 
         return Optional.empty();
     }

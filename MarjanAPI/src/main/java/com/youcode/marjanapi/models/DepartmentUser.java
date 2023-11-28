@@ -5,5 +5,5 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "department_administrator")
-public class DepartmentAdministrator extends Administrator{
+public class DepartmentUser extends User {
 }

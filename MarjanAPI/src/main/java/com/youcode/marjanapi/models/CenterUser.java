@@ -11,6 +11,6 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class CenterAdministrator extends Administrator{
+public class CenterUser extends User {
     private String city;
 }

@@ -3,13 +3,12 @@
     import com.youcode.marjanapi.enums.Role;
     import jakarta.persistence.*;
     import lombok.Data;
-    import lombok.NoArgsConstructor;
 
     import java.util.UUID;
 
     @Data
     @MappedSuperclass
-    public abstract class Administrator {
+    public abstract class User {
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
         private UUID uuid;
