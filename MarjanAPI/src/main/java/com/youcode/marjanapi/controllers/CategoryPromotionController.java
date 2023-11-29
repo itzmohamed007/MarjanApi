@@ -3,6 +3,7 @@ package com.youcode.marjanapi.controllers;
 import com.youcode.marjanapi.dtos.CategoryPromotionDto;
 import com.youcode.marjanapi.dtos.responses.CategoryPromotionRes;
 import com.youcode.marjanapi.models.CategoryPromotion;
+import com.youcode.marjanapi.models.DepartmentUser;
 import com.youcode.marjanapi.services.CategoryPromotionService;
 import jakarta.validation.Valid;
 import org.modelmapper.ModelMapper;
@@ -32,6 +33,8 @@ public class CategoryPromotionController {
     public ResponseEntity<?> create(@Valid @RequestBody CategoryPromotionDto requestCategoryPromotion) {
         CategoryPromotion categoryPromotion = modelMapper.map(requestCategoryPromotion, CategoryPromotion.class);
         if(service.create(categoryPromotion)) {
+            categoryPromotion.addObserver(new DepartmentUser());
+            categoryPromotion.notifyObserver(); // notifying department admins
             return new ResponseEntity<>("category promotion created successfully", HttpStatus.CREATED);
         } else {
             return new ResponseEntity<>("category promotion creation failed", HttpStatus.INTERNAL_SERVER_ERROR);

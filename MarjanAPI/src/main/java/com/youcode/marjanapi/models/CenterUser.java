@@ -6,11 +6,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Entity
 @Table(name = "center_administrator")
 @NoArgsConstructor
 @Getter
 @Setter
-public class CenterAdministrator extends Administrator{
+public class CenterUser extends User {
     private String city;
 }

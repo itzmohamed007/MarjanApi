@@ -3,16 +3,12 @@ package com.youcode.marjanapi.models;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToOne;
-import jakarta.persistence.Table;
 import lombok.Data;
-import lombok.ToString;
 
-
-@Data
 @Entity
-@Table(name = "category_promotion")
-public class CategoryPromotion extends Promotion {
-    @OneToOne
+@Data
+public class Client extends User {
+    @OneToOne(mappedBy = "client")
     @JsonIgnore
-    private Category category;
+    private LoyaltyCard loyaltyCard;
 }

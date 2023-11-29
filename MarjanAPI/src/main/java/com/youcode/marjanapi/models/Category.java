@@ -22,4 +22,7 @@ public class Category {
     @OneToMany(mappedBy = "category")
     @JsonIgnore
     private List<Product> products;
+    @ManyToOne
+    @JsonIgnore
+    private Stock stock;
 }

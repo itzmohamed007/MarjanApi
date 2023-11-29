@@ -1,6 +1,6 @@
 package com.youcode.marjanapi.services.implementation;
 
-import com.youcode.marjanapi.models.CenterAdministrator;
+import com.youcode.marjanapi.models.CenterUser;
 import com.youcode.marjanapi.repositories.CenterAdministratorRepository;
 import com.youcode.marjanapi.services.AdministratorService;
 import org.modelmapper.ModelMapper;
@@ -11,7 +11,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Service
-public class CenterAdministratorServiceImp implements AdministratorService<CenterAdministrator> {
+public class CenterAdministratorServiceImp implements AdministratorService<CenterUser> {
     private CenterAdministratorRepository repository;
 
     @Autowired
@@ -20,12 +20,12 @@ public class CenterAdministratorServiceImp implements AdministratorService<Cente
     }
 
     @Override
-    public boolean login(CenterAdministrator o) {
+    public boolean login(CenterUser o) {
         return false;
     }
 
     @Override
-    public Optional<CenterAdministrator> create(CenterAdministrator o) {
+    public Optional<CenterUser> create(CenterUser o) {
         return Optional.empty();
     }
 
