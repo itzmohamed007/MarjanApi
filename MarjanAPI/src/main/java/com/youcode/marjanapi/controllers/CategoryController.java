@@ -9,13 +9,16 @@ import com.youcode.marjanapi.services.CrudService;
 import com.youcode.marjanapi.services.implementation.CategoryServiceImp;
 import jakarta.validation.Valid;
 import org.modelmapper.ModelMapper;
+import org.modelmapper.internal.bytebuddy.asm.Advice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/categories")
 public class CategoryController {
@@ -32,7 +35,7 @@ public class CategoryController {
     public ResponseEntity<?> readAll() {
         List<CategoryProductRes> categories = service.readAll().stream()
                 .map(category -> modelMapper.map(category, CategoryProductRes.class))
-                .toList();
+                .collect(Collectors.toList());
         if(categories.isEmpty()) {
             return new ResponseEntity<>("No categories found", HttpStatus.NOT_FOUND);
         }

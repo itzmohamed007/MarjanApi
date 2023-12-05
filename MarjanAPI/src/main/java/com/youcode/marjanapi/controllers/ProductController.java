@@ -13,7 +13,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/products")
 public class ProductController {
@@ -30,7 +32,7 @@ public class ProductController {
     public ResponseEntity<?> readAll() {
         List<ProductCategoryRes> products = service.readAll().stream()
                 .map(product -> modelMapper.map(product, ProductCategoryRes.class))
-                .toList();
+                .collect(Collectors.toList());
         if(products.isEmpty()) {
             return new ResponseEntity<>("No products found", HttpStatus.NOT_FOUND);
         }

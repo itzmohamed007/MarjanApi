@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e33ab17f-d32e-45d4-95f7-734926f0ea8a" name="Changes" comment="rfibrfhi">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/Observer/Observable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/Observer/Observer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/Observer/EmailMsgListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/Observer/NotificationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/MarjanApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/MarjanApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/CategoryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/CategoryPromotionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/CategoryPromotionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/CenterUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/CenterUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/DepartmentUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/DepartmentUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/Promotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/models/Promotion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/CenterAdministratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/CenterAdministratorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/DepartmentAdministratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/DepartmentAdministratorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/GeneralAdministratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/GeneralAdministratorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/ProductPromotionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youcode/marjanapi/controllers/ProductPromotionController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +61,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;git-widget-placeholder&quot;: &quot;promotions&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/adm/Desktop/MarjanApi/MarjanAPI&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -98,10 +100,10 @@
     <configuration name="generated-requests | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" requestIdentifier="#4" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" requestIdentifier="#5" runType="Run single request">
+    <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="Run single request">
+    <configuration name="generated-requests | #7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="7" requestIdentifier="#7" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="MarjanApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -113,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #7" />
         <item itemvalue="HTTP Request.generated-requests | #6" />
         <item itemvalue="HTTP Request.generated-requests | #4" />
         <item itemvalue="HTTP Request.generated-requests | #3" />
         <item itemvalue="HTTP Request.generated-requests | #2" />
-        <item itemvalue="HTTP Request.generated-requests | #5" />
       </list>
     </recent_temporary>
   </component>
@@ -166,6 +168,11 @@
       <workItem from="1701157896892" duration="1159000" />
       <workItem from="1701199067766" duration="4697000" />
       <workItem from="1701244404735" duration="8916000" />
+      <workItem from="1701695844572" duration="2352000" />
+      <workItem from="1701724055630" duration="2025000" />
+      <workItem from="1701768437486" duration="18000" />
+      <workItem from="1701768922126" duration="2255000" />
+      <workItem from="1701786237846" duration="1677000" />
     </task>
     <servers />
   </component>

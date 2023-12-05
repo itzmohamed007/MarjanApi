@@ -10,6 +10,7 @@ import com.youcode.marjanapi.services.ProductPromotionService;
 import jakarta.validation.Valid;
 import jakarta.websocket.server.PathParam;
 import org.modelmapper.ModelMapper;
+import org.modelmapper.internal.bytebuddy.asm.Advice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +20,9 @@ import java.net.http.HttpResponse;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/products/promotions")
 public class ProductPromotionController {
@@ -55,7 +58,7 @@ public class ProductPromotionController {
     public ResponseEntity<?> readAll() {
         List<ProductPromotionRes> productPromotions = service.readAll().stream()
                 .map(productPromotion -> modelMapper.map(productPromotion, ProductPromotionRes.class))
-                .toList();
+                .collect(Collectors.toList());
         if(productPromotions.isEmpty()) {
             return new ResponseEntity<>("No product promotions found", HttpStatus.NOT_FOUND);
         }
