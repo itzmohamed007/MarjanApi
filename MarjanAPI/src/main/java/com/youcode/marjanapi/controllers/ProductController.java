@@ -2,7 +2,6 @@ package com.youcode.marjanapi.controllers;
 
 import com.youcode.marjanapi.dtos.ProductDto;
 import com.youcode.marjanapi.dtos.responses.ProductCategoryRes;
-import com.youcode.marjanapi.dtos.responses.ProductRes;
 import com.youcode.marjanapi.models.Product;
 import com.youcode.marjanapi.services.implementation.ProductServiceImp;
 import jakarta.validation.Valid;

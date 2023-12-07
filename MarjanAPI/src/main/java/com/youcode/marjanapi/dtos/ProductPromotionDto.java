@@ -1,6 +1,5 @@
 package com.youcode.marjanapi.dtos;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.NoArgsConstructor;

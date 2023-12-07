@@ -1,7 +1,9 @@
 package com.youcode.marjanapi.enums;
 
 public enum Role {
-    GENERAL_ADMIN,
-    CENTER_ADMIN,
-    DEPARTMENT_ADMIN
+    ROLE_GENERAL_ADMIN,
+    ROLE_CENTER_ADMIN,
+    ROLE_DEPARTMENT_ADMIN,
+    ROLE_CLIENT,
+    ROLE_CASHIER
 }

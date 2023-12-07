@@ -1,22 +1,16 @@
 package com.youcode.marjanapi.controllers;
 
-import com.youcode.marjanapi.dtos.CategoryPromotionDto;
 import com.youcode.marjanapi.dtos.ProductPromotionDto;
-import com.youcode.marjanapi.dtos.responses.CategoryPromotionRes;
 import com.youcode.marjanapi.dtos.responses.ProductPromotionRes;
-import com.youcode.marjanapi.models.CategoryPromotion;
 import com.youcode.marjanapi.models.ProductPromotion;
 import com.youcode.marjanapi.services.ProductPromotionService;
 import jakarta.validation.Valid;
-import jakarta.websocket.server.PathParam;
 import org.modelmapper.ModelMapper;
-import org.modelmapper.internal.bytebuddy.asm.Advice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.net.http.HttpResponse;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;

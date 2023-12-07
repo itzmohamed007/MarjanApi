@@ -3,13 +3,11 @@ package com.youcode.marjanapi.controllers;
 
 import com.youcode.marjanapi.dtos.CategoryDto;
 import com.youcode.marjanapi.dtos.responses.CategoryProductRes;
-import com.youcode.marjanapi.dtos.responses.CategoryRes;
 import com.youcode.marjanapi.models.Category;
 import com.youcode.marjanapi.services.CrudService;
 import com.youcode.marjanapi.services.implementation.CategoryServiceImp;
 import jakarta.validation.Valid;
 import org.modelmapper.ModelMapper;
-import org.modelmapper.internal.bytebuddy.asm.Advice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

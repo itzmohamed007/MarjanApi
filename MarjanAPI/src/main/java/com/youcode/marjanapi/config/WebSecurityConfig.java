@@ -17,8 +17,11 @@ public class WebSecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http.
                 csrf(csrf -> csrf.disable())
-                .authorizeHttpRequests(auth -> auth.anyRequest().permitAll())
-//                .httpBasic().and()
+                .authorizeHttpRequests(auth -> {
+                    auth.requestMatchers("/api/users").hasRole("GENERAL_ADMIN");
+                    auth.anyRequest().authenticated();
+                })
+                .httpBasic().and()
                 .build();
     }
 

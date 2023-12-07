@@ -19,8 +19,9 @@ public abstract class Promotion implements Observable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID uuid;
     private float percentage;
+    @Column(nullable = false)
     @Enumerated(EnumType.STRING)
-    private PromotionStatus status;
+    private PromotionStatus status = PromotionStatus.pending;
     @Transient
     private List<Observer> observers = new ArrayList<>();
 
