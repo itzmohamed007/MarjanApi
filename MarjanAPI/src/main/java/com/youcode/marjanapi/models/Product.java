@@ -1,6 +1,7 @@
 package com.youcode.marjanapi.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -19,7 +20,7 @@ public class Product {
     private String brand;
     private float price;
     @OneToOne(mappedBy = "product", fetch = FetchType.LAZY)
-    @JsonIgnore
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private ProductPromotion productPromotion;
     @ManyToOne
     @JsonIgnore

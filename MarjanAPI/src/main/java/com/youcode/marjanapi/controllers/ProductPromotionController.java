@@ -7,6 +7,7 @@ import com.youcode.marjanapi.dtos.responses.ProductPromotionRes;
 import com.youcode.marjanapi.models.CategoryPromotion;
 import com.youcode.marjanapi.models.ProductPromotion;
 import com.youcode.marjanapi.services.ProductPromotionService;
+import com.youcode.marjanapi.services.implementation.ProductPromotionServiceImp;
 import jakarta.validation.Valid;
 import jakarta.websocket.server.PathParam;
 import org.modelmapper.ModelMapper;
@@ -17,17 +18,19 @@ import org.springframework.web.bind.annotation.*;
 
 import java.net.http.HttpResponse;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.UUID;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/products/promotions")
 public class ProductPromotionController {
-    private final ProductPromotionService service;
+    private final ProductPromotionServiceImp service;
     private final ModelMapper modelMapper;
 
     @Autowired
-    public ProductPromotionController(ProductPromotionService productPromotionService, ModelMapper modelMapper) {
+    public ProductPromotionController(ProductPromotionServiceImp productPromotionService, ModelMapper modelMapper) {
         this.service = productPromotionService;
         this.modelMapper = modelMapper;
     }
@@ -52,14 +55,16 @@ public class ProductPromotionController {
     }
 
     @GetMapping
-    public ResponseEntity<?> readAll() {
-        List<ProductPromotionRes> productPromotions = service.readAll().stream()
-                .map(productPromotion -> modelMapper.map(productPromotion, ProductPromotionRes.class))
-                .toList();
-        if(productPromotions.isEmpty()) {
-            return new ResponseEntity<>("No product promotions found", HttpStatus.NOT_FOUND);
-        }
-        return new ResponseEntity<>(productPromotions, HttpStatus.OK);
+    public ResponseEntity<?> readAll(@RequestParam int page) {
+//        public ResponseEntity<?> readAll() {
+//        List<ProductPromotionRes> productPromotions = service.readAll().stream()
+//                .map(productPromotion -> modelMapper.map(productPromotion, ProductPromotionRes.class))
+//                .toList();
+//        if(productPromotions.isEmpty()) {
+//            return new ResponseEntity<>("No product promotions found", HttpStatus.NOT_FOUND);
+//        }
+//        return new ResponseEntity<>(productPromotions, HttpStatus.OK);
+        return new ResponseEntity<>(service.readAllPaginated(page, 4), HttpStatus.OK);
     }
 
     @PutMapping("/{uuid}")
@@ -79,4 +84,20 @@ public class ProductPromotionController {
         }
         return new ResponseEntity<>("No product promotion found with uuid: " + uuid, HttpStatus.NOT_FOUND);
     }
+    @PutMapping("/{uuid}/accept")
+    public ResponseEntity<?> accept(@PathVariable UUID uuid) {
+        if(service.accept(uuid)) {
+            return new ResponseEntity<>(Map.of("message", "Product promotion accepted successfully"), HttpStatus.OK);
+        }
+        return new ResponseEntity<>(Map.of("message", "No product promotion found with uuid: " + uuid), HttpStatus.NOT_FOUND);
+    }
+
+    @PutMapping("/{uuid}/deny")
+    public ResponseEntity<?> deny(@PathVariable UUID uuid) {
+        if(service.deny(uuid)) {
+            return new ResponseEntity<>(Map.of("message", "Product promotion denied successfully"), HttpStatus.OK);
+        }
+        return new ResponseEntity<>(Map.of("message", "No product promotion found with uuid: " + uuid), HttpStatus.NOT_FOUND);
+    }
+
 }
