@@ -1,6 +1,8 @@
 package com.youcode.marjanapi.services.implementation;
 
+import com.youcode.marjanapi.enums.PromotionStatus;
 import com.youcode.marjanapi.models.CategoryPromotion;
+import com.youcode.marjanapi.models.ProductPromotion;
 import com.youcode.marjanapi.repositories.CategoryPromotionRepository;
 import com.youcode.marjanapi.services.CategoryPromotionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,6 +60,18 @@ public class CategoryPromotionServiceImp implements CategoryPromotionService {
             repository.deleteById(uuid);
             return true;
         }
+        return false;
+    }
+
+    @Override
+    public boolean accept(UUID uuid) {
+
+        return false;
+    }
+
+    @Override
+    public boolean deny(UUID uuid) {
+
         return false;
     }
 }
